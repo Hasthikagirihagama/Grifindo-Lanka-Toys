@@ -69,5 +69,25 @@ namespace Grifindo_Lanka_Toys.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap file_2024_09_25_19_34_14 {
+            get {
+                object obj = ResourceManager.GetObject("file_2024-09-25_19.34.14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imageedit_1_4588549252 {
+            get {
+                object obj = ResourceManager.GetObject("imageedit_1_4588549252", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

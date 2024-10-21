@@ -35,6 +35,7 @@
             username = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            Back_btn = new Button();
             SuspendLayout();
             // 
             // label3
@@ -58,12 +59,13 @@
             login_btn.FlatAppearance.BorderColor = Color.Black;
             login_btn.FlatAppearance.BorderSize = 3;
             login_btn.Font = new Font("Montserrat ExtraBold", 12F, FontStyle.Bold);
-            login_btn.Location = new Point(439, 368);
+            login_btn.Location = new Point(369, 367);
             login_btn.Name = "login_btn";
             login_btn.Size = new Size(120, 50);
             login_btn.TabIndex = 11;
             login_btn.Text = "Login";
             login_btn.UseVisualStyleBackColor = false;
+            login_btn.Click += login_btn_Click;
             // 
             // password
             // 
@@ -110,6 +112,19 @@
             label1.TabIndex = 7;
             label1.Text = "Welcome Back!";
             // 
+            // Back_btn
+            // 
+            Back_btn.BackColor = Color.Black;
+            Back_btn.Font = new Font("Montserrat SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Back_btn.ForeColor = Color.White;
+            Back_btn.Location = new Point(765, 412);
+            Back_btn.Name = "Back_btn";
+            Back_btn.Size = new Size(97, 37);
+            Back_btn.TabIndex = 24;
+            Back_btn.Text = "Back";
+            Back_btn.UseVisualStyleBackColor = false;
+            Back_btn.Click += Back_btn_Click;
+            // 
             // Employee_Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -117,6 +132,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(874, 461);
+            Controls.Add(Back_btn);
             Controls.Add(label3);
             Controls.Add(login_btn);
             Controls.Add(password);
@@ -137,5 +153,6 @@
         private TextBox username;
         private Label label2;
         private Label label1;
+        private Button Back_btn;
     }
 }
